@@ -206,8 +206,8 @@ function __construct(){
             'charset'   => 'utf-8',
             'protocol'  => 'smtp',
             'smtp_host' => 'smtp.gmail.com',
-            'smtp_user' => 'mocham.anwar@gmail.com',  // Email gmail
-            'smtp_pass'   => '@1qaz2wsx',  // Password gmail
+            'smtp_user' => 'infopahoa@sekolah.pahoa.sch.id',  // Email gmail
+            'smtp_pass'   => 'Pahoa12345',  // Password gmail
             'smtp_crypto' => 'ssl',
             'smtp_port'   => 465,
             'crlf'    => "\r\n",
@@ -218,7 +218,7 @@ function __construct(){
         $this->load->library('email', $config);
 
         // Email dan nama pengirim
-        $this->email->from('mocham.anwar@gmail.com', 'Anwar');
+        $this->email->from('infopahoa@sekolah.pahoa.sch.id', 'Anwar');
 
         // Email penerima
         $this->email->to($toEmail); // Ganti dengan email tujuan
