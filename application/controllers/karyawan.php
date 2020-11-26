@@ -113,6 +113,7 @@ function __construct(){
 
         $data['nik'] = "";		
 		$data['nama'] = "";
+		$data['email'] = "";
 		$data['alamat'] = "";
 		
 
@@ -143,7 +144,7 @@ function __construct(){
 
 	$nama = strtoupper(trim($this->input->post('nama')));
 	$email = trim($this->input->post('email'));
- 	$jk = strtoupper(tremailim($this->input->post('id_jk')));
+ 	$jk = strtoupper(trim($this->input->post('id_jk')));
  	$alamat = strtoupper(trim($this->input->post('alamat')));
  	$id_dept = strtoupper(trim($this->input->post('id_departemen')));
  	$id_jabatan = strtoupper(trim($this->input->post('id_jabatan')));
